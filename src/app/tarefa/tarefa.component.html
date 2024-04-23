@@ -1,0 +1,52 @@
+<!-- Estilizar os demais elementos -->
+
+<form class="card">
+  <form class="example-form" >
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Resumo</mat-label>
+      <input matInput placeholder="Ex. DNS não funciona">
+    </mat-form-field>
+
+    <br />
+
+    <label>Tipo de Problema:</label>
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="TAREFA">Tarefa</mat-radio-button>
+      <mat-radio-button value="BUG">Bug</mat-radio-button>
+    </mat-radio-group>
+
+    <br />
+
+    <h3>Prioridade:</h3>
+    <mat-form-field>
+    <select matNativeControl required>
+      <option value="1">Selecione</option>
+      <option value="0">Critica</option>
+      <option value="1">Alta</option>
+      <option value="2">Media</option>
+      <option value="3">Baixa</option>
+    </select>
+    </mat-form-field>
+
+    <br />
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Prazo Final</mat-label>
+        <input matInput placeholder="Ex." value="">
+      </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Descrição</mat-label>
+      <textarea matInput placeholder=""></textarea>
+    </mat-form-field>
+
+    <br />
+
+    <button mat-flat-button color="primary">Enviar</button>
+
+  </form>
+</form>
