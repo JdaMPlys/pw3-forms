@@ -10,12 +10,16 @@ import { MatRadioModule } from '@angular/material/radio';
 import {MatSelectModule } from '@angular/material/select';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TarefaComponent
+    TarefaComponent,
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatRadioModule,
     MatSelectModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
