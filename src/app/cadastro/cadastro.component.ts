@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -14,8 +14,8 @@ export class CadastroComponent {
 
 
   cadastroForm = this.formBuilder.group({
-    nome: [null],
-    email: [null],
+    nome: this.formBuilder.control('', [Validators.required, Validators.minLength(3), Validators.maxLength(35)]),
+    email: this.formBuilder.control('', [Validators.required, Validators.email, Validators.maxLength(40)]),
     usuario: [null],
     senha: [null],
     confirmarSenha: [null]
